@@ -1,11 +1,11 @@
 class Room{
-  RoomType typeOfRoom; 
-  public void Building(RoomType rt){
-    this.typeOfRoom = rt;
+  private RoomType typeOfRoom; 
+
+  public Room(RoomType rt) {
+     this.typeOfRoom = rt;
+     System.out.println("New room created");
   }
-  public Room(){
-//    System.out.println("New room created");
-  }
+    
   public RoomType getTypeOfRoom(){
     return(typeOfRoom);
   }
